@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial</title>
+	<style type="text/css">
+		}
+		button{
+			background-color: cyan;
+		}
+	</style>
+
+</head>
+<body>
+	Enter Number: <input id="number"><br><br>
+	<button onClick="fact()">Factorial</button> <br><br>
+	Factorial is: <input id="answer">
+
+	<script type="text/javascript">
+		function fact(){
+			var num,i,fact=1;
+			num=Number(document.getElementById('number').value);
+			for(i=1;i<=num;i++){
+				fact=fact*i
+			}
+			document.getElementById('answer').value=fact;
+		}
+	</script>
+
+</body>
+</html>
