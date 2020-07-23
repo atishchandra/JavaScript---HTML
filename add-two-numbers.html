@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add two Numbers</title>
+</head>
+<body>
+Enter the First Number: <input id='first'><br><br>
+Enter the Second Number: <input id='Second'><br><br>
+<button onclick="addNumber()">Add</button>
+<input id='answer'>
+
+<script type="text/javascript">
+	function addNumber(){
+		var a=Number(document.getElementById('first').value);
+		var b=Number(document.getElementById('Second').value);
+		c=a+b;
+		document.getElementById('answer').value=c;
+
+	}
+
+</script>
+
+</body>
+</html>
